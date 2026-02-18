@@ -16,6 +16,18 @@ Interactively gather codebase context and create self-contained Linear issues fo
 
 **Usage:** `/delegate Fix spike detection threshold` or just `/delegate` and follow the prompts.
 
+### [`single-cell-rna-qc`](single-cell-rna-qc/SKILL.md)
+
+Automated QC workflow for single-cell RNA-seq data following scverse best practices.
+
+**What it does:**
+1. Loads `.h5ad` or `.h5` files and computes QC metrics (mitochondrial %, ribosomal %, counts, genes)
+2. Applies MAD-based adaptive filtering thresholds
+3. Generates comprehensive QC visualizations (violin plots, scatter plots, histograms)
+4. Produces a filtered AnnData object ready for downstream analysis
+
+**Includes:** Reference docs (`references/`), helper scripts (`scripts/qc_core.py`, `qc_analysis.py`, `qc_plotting.py`)
+
 ## Installation
 
 These skills are installed by symlinking (or copying) into `~/.claude/skills/`:
