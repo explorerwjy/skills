@@ -1,0 +1,25 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Data files
+*.csv
+*.tsv
+*.parquet
+*.h5
+*.h5ad
+*.pkl
+*.npy
+*.npz
+
+# Secrets
+.env
+*.pem
+credentials.*
